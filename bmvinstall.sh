@@ -1,5 +1,5 @@
 apt-get update
-apt-get install apache2 libapache2-mod-php php
+apt-get -y install apache2 libapache2-mod-php php
 mkdir /var/www/html/VictronBMV
 cd /var/www/html/VictronBMV
 wget https://raw.githubusercontent.com/sean6541/file/master/VictronBMV.zip
