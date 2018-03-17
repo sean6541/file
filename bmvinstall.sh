@@ -1,11 +1,9 @@
 apt-get update
 apt-get -y install apache2 libapache2-mod-php php
-mkdir /var/www/html/VictronBMV
-cd /var/www/html/VictronBMV
+cd /var/www/html
 wget https://raw.githubusercontent.com/sean6541/file/master/VictronBMV.zip
-unzip -j ./VictronBMV.zip
+unzip ./VictronBMV.zip
 rm ./VictronBMV.zip
-cd ../
 chmod -R 755 ./VictronBMV
 mv ./VictronBMV/VictronBMV.conf /etc/apache2/sites-available
 a2ensite VictronBMV
