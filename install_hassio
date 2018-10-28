@@ -1,7 +1,0 @@
-#!/bin/bash
-sudo apt-get update
-sudo apt-get -y install apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager socat software-properties-common
-curl https://get.docker.com | sudo bash -s
-sudo systemctl enable docker && sudo systemctl start docker
-sudo usermod -aG docker pi
-curl https://raw.githubusercontent.com/home-assistant/hassio-build/master/install/hassio_install | sudo bash -s -- -m raspberrypi3
